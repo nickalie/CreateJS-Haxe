@@ -8,7 +8,7 @@ public static var IGNORE:Dynamic;
 public static var LOOP:Dynamic;
 public static var NONE:Dynamic;
 
-public static function get(target:Dynamic):Tween;
+public static function get(target:Dynamic, ?props:Dynamic):Tween;
 public static function installPlugin(plugin:Dynamic, properties:Dynamic):Void;
 public static function removeTweens(target:Dynamic):Void;
 public static function tick(delta:Int, pause:Bool):Void;
@@ -18,7 +18,7 @@ public var ignoreGlobalPause:Bool;
 public var loop:Bool;
 public var pluginData:Dynamic;
 
-public function new():Tween;
+public function new():Void;
 public function call(handler:Dynamic, params:Array<Dynamic>):Tween;
 public function pause(tween:Tween):Void;
 public function play(tween:Tween):Void;
