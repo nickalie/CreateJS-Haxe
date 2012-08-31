@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("Command")
+@:native("createjs.Command")
 extern class Command {
 
 	public function new():Void;

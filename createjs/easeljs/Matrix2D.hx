@@ -1,7 +1,7 @@
 package createjs.easeljs;
 import createjs.easeljs.Shadow;
 
-@:native ("Matrix2D")
+@:native("createjs.Matrix2D")
 extern class Matrix2D {
 
     public static var DEG_TO_RAD:Float;

@@ -1,6 +1,6 @@
 package createjs.soundjs;
 
-@:native ("SoundJS")
+@:native("createjs.SoundJS")
 extern class SoundJS
 {
 public static var INTERRUPT_NONE:String;

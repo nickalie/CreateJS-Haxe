@@ -1,6 +1,6 @@
 package createjs.tweenjs;
 
-@:native ("Ease")
+@:native("createjs.Ease")
 extern class Ease
 {
 

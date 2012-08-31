@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("Point")
+@:native("createjs.Point")
 extern class Point {
 
 	public var x:Float;

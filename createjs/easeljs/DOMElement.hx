@@ -4,7 +4,7 @@ import createjs.easeljs.Point;
 import js.CanvasRenderingContext2D;
 import js.Dom;
 
-@:native ("DOMElement")
+@:native("createjs.DOMElement")
 extern class DOMElement extends DisplayObject {
 
 	public var _style:Dynamic;

@@ -2,7 +2,7 @@ package createjs.easeljs;
 import createjs.easeljs.Stage;
 import createjs.easeljs.MouseEvent;
 
-@:native ("Touch")
+@:native("createjs.Touch")
 extern class Touch {
 
 	public function _findPrimaryTouch (stage:Stage, touches:Array<Touch>):Void;

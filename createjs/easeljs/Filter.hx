@@ -1,7 +1,7 @@
 package createjs.easeljs;
 import createjs.easeljs.Rectangle;
 
-@:native ("Filter")
+@:native("createjs.Filter")
 extern class Filter {
 
 	public function applyFilter (ctx:Dynamic, x:Dynamic, y:Dynamic, width:Dynamic, height:Dynamic, targetCtx:Dynamic, targetX:Dynamic, targetY:Dynamic):Void;

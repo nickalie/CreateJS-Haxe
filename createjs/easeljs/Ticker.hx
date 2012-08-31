@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("Ticker")
+@:native("createjs.Ticker")
 extern class Ticker {
 
     public static var useRAF:Bool;

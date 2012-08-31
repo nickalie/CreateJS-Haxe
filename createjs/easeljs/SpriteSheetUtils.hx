@@ -3,7 +3,7 @@ package createjs.easeljs;
 import easelhx.js.Image;
 import createjs.easeljs.SpriteSheet;
 
-@:native ("SpriteSheetUtils")
+@:native("createjs.SpriteSheetUtils")
 extern class SpriteSheetUtils {
 
 	/**

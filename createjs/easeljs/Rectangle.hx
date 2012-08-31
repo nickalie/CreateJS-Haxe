@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("Rectangle")
+@:native("createjs.Rectangle")
 extern class Rectangle {
 
 	public var height:Float;

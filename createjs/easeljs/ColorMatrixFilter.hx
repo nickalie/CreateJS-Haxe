@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("ColorMatrixFilter")
+@:native("createjs.ColorMatrixFilter")
 extern class ColorMatrixFilter extends Filter {
 
 	override public function applyFilter (ctx:Dynamic, x:Dynamic, y:Dynamic, width:Dynamic, height:Dynamic, targetCtx:Dynamic, targetX:Dynamic, targetY:Dynamic):Void;

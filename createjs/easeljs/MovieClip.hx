@@ -3,7 +3,7 @@ package createjs.easeljs;
 import js.CanvasRenderingContext2D;
 import tweenhx.Timeline;
 
-@:native ("MovieClip")
+@:native("createjs.MovieClip")
 extern class MovieClip extends Container {
 
 	public var _managed:Dynamic;

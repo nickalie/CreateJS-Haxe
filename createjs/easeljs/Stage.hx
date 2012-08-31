@@ -3,7 +3,7 @@ package createjs.easeljs;
 import createjs.easeljs.MouseEvent;
 import js.HTMLCanvasElement;
 
-@:native("Stage")
+@:native("createjs.Stage")
 extern class Stage extends Container {
 
 	public var autoClear:Bool;

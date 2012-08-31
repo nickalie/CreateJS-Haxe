@@ -3,7 +3,7 @@ package createjs.easeljs;
 import js.HTMLCanvasElement;
 import js.CanvasRenderingContext2D;
 
-@:native("DisplayObject")
+@:native("createjs.DisplayObject")
 extern class DisplayObject {
 
     public static var suppressCrossDomainErrors:Bool;
@@ -30,6 +30,7 @@ extern class DisplayObject {
 	public var visible:Bool;
 	public var x:Float;
 	public var y:Float;
+    public var mask:Shape;
 
 	public function cache(?x:Float, ?y:Float, ?width:Float, ?height:Float):Void;
 	public function clone(?recursive:Bool):DisplayObject;

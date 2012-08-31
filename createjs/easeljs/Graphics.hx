@@ -2,7 +2,7 @@ package createjs.easeljs;
 
 import js.CanvasRenderingContext2D;
 
-@:native("Graphics")
+@:native("createjs.Graphics")
 extern class Graphics {
 
     public static var BASE_64:Dynamic;

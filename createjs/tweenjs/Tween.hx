@@ -1,6 +1,6 @@
 package createjs.tweenjs;
 
-@:native ("Tween")
+@:native("createjs.Tween")
 extern class Tween
 {
 
@@ -19,13 +19,13 @@ public var loop:Bool;
 public var pluginData:Dynamic;
 
 public function new():Void;
-public function call(handler:Dynamic, params:Array<Dynamic>):Tween;
-public function pause(tween:Tween):Void;
+public function call(handler:Dynamic, ?params:Array<Dynamic>):Tween;
+public function pause(?tween:Tween):Void;
 public function play(tween:Tween):Void;
 public function set(props:Dynamic, target:Dynamic):Void;
 public function setPaused(value:Bool):Void;
 public function setPosition(value:Int, actionsMode:Dynamic):Void;
-public function to(props:Dynamic, duration:Int, ease:Dynamic):Tween;
+public function to(props:Dynamic, duration:Float, ?ease:Dynamic):Tween;
 public function toString():String;
 public function wait(duration:Int):Tween;
 

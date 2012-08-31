@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("SpriteSheet")
+@:native("createjs.SpriteSheet")
 extern class SpriteSheet {
 
 	public var _animations:Dynamic;
@@ -20,7 +20,7 @@ extern class SpriteSheet {
 	public function clone ():SpriteSheet;
 	public function getAnimations ():Dynamic;
 	public function getFrame (frameIndex:Float):Dynamic;
-	public function getNumFrames (animation:String):Int;
+	public function getNumFrames(?animation:String):Int;
 	public function initialize (data:Dynamic):Void;
 	public function new (data:Dynamic):Void;
 	public function toString ():String;

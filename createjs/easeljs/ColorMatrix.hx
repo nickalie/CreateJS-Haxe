@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("ColorMatrix")
+@:native("createjs.ColorMatrix")
 extern class ColorMatrix {
 
 	public function _cleanValue (value:Dynamic, limit:Dynamic):Void;

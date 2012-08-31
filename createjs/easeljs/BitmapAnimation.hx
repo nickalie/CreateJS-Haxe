@@ -3,7 +3,7 @@ package createjs.easeljs;
 import createjs.easeljs.Point;
 import js.CanvasRenderingContext2D;
 
-@:native("BitmapAnimation")
+@:native("createjs.BitmapAnimation")
 extern class BitmapAnimation extends DisplayObject {
 
 	public var currentAnimation:String;

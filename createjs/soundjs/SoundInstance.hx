@@ -1,6 +1,6 @@
 package createjs.soundjs;
 
-@:native ("SoundInstance")
+@:native("createjs.SoundInstance")
 extern class SoundInstance
 {
 	

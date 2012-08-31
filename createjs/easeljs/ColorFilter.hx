@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("ColorFilter")
+@:native("createjs.ColorFilter")
 extern class ColorFilter extends Filter {
 
 	public var alphaOffset:Float;

@@ -1,7 +1,7 @@
 package createjs.easeljs;
 import js.CanvasRenderingContext2D;
 
-@:native("Container")
+@:native("createjs.Container")
 extern class Container extends DisplayObject {
 
 	public var children:Array<DisplayObject>;

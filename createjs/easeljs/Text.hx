@@ -2,7 +2,7 @@ package createjs.easeljs;
 import createjs.easeljs.Point;
 import js.CanvasRenderingContext2D;
 
-@:native ("Text")
+@:native("createjs.Text")
 extern class Text extends DisplayObject {
 
 	public var color:String;
@@ -16,6 +16,7 @@ extern class Text extends DisplayObject {
 	public var textBaseline:String;
 
 	public function new(text:String, ?font:String, ?color:String):Void;
-	public function getMeasuredLineHeight ():Float;
-	public function getMeasuredWidth ():Float;
+	public function getMeasuredLineHeight():Float;
+	public function getMeasuredWidth():Float;
+    public function getMeasuredHeight():Float;
 }

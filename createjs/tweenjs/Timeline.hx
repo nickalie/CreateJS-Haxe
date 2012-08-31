@@ -1,6 +1,6 @@
 package createjs.tweenjs;
 
-@:native("Timeline")
+@:native("createjs.Timeline")
 extern class Timeline
 {
 

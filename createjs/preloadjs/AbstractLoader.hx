@@ -1,6 +1,6 @@
 package createjs.preloadjs;
 
-@:native ("AbstractLoader ")
+@:native("createjs.AbstractLoader ")
 extern class AbstractLoader
 {
 

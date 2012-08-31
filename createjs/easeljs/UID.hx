@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-@:native ("UID")
+@:native("createjs.UID")
 extern class UID {
 
 	public static function get():Float;

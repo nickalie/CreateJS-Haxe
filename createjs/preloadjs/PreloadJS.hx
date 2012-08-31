@@ -1,6 +1,6 @@
 package createjs.preloadjs;
 
-@:native ("PreloadJS")
+@:native("createjs.PreloadJS")
 extern class PreloadJS extends AbstractLoader
 {
 
@@ -17,13 +17,16 @@ public var maintainScriptOrder:Bool;
 public var next:PreloadJS;
 public var stopOnError:Bool;
 public var useXHR:Bool;
+public var _loadedItemsBySrc:Dynamic;
+public var _loadedItemsById:Dynamic;
+public var _loadQueue:Array<Dynamic>;
 
 public function new():Void;
 public function close():Void;
-public function getResult(src:String):Dynamic;
+public function getResult(src:String):{id:String, src:String, result:Dynamic};
 public function initialize(?useXHR:Bool):Void;
 public function installPlugin(plugin:Dynamic):Void;
-public function loadFile(src:String, ?loadNow:Bool = true):Void;
+public function loadFile(src:Dynamic, ?loadNow:Bool = true):Void;
 public function loadManifest(manifest:Dynamic, ?loadNow:Bool = true):Void;
 public function setMaxConnections(value:Int):Void;
 public function setPaused(value:Bool):Void;
