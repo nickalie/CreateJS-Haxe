@@ -1,6 +1,6 @@
 package createjs.easeljs;
 import createjs.easeljs.Rectangle;
-import js.CanvasRenderingContext2D;
+import html5.CanvasRenderingContext2D;
 
 @:native("createjs.Bitmap")
 extern class Bitmap extends DisplayObject {

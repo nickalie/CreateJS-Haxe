@@ -1,6 +1,6 @@
 package createjs.easeljs;
 
-import js.CanvasRenderingContext2D;
+import html5.CanvasRenderingContext2D;
 
 @:native("createjs.Graphics")
 extern class Graphics {
