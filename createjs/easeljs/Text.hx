@@ -1,6 +1,6 @@
 package createjs.easeljs;
 import createjs.easeljs.Point;
-import js.CanvasRenderingContext2D;
+import html5.CanvasRenderingContext2D;
 
 @:native("createjs.Text")
 extern class Text extends DisplayObject {

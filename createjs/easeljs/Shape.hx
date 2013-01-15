@@ -1,5 +1,5 @@
 package createjs.easeljs;
-import js.CanvasRenderingContext2D;
+import html5.CanvasRenderingContext2D;
 
 @:native("createjs.Shape")
 extern class Shape extends DisplayObject {

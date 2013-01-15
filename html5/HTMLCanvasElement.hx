@@ -1,4 +1,4 @@
-package js;
+package html5;
 
 @:native ("HTMLCanvasElement")
 extern class HTMLCanvasElement

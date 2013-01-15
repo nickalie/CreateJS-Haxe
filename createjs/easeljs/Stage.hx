@@ -1,7 +1,7 @@
 package createjs.easeljs;
 
 import createjs.easeljs.MouseEvent;
-import js.HTMLCanvasElement;
+import html5.HTMLCanvasElement;
 
 @:native("createjs.Stage")
 extern class Stage extends Container {
