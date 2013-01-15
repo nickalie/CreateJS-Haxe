@@ -1,7 +1,7 @@
 package createjs.easeljs;
 
 import js.CanvasRenderingContext2D;
-import tweenhx.Timeline;
+import createjs.tweenjs.Timeline;
 
 @:native("createjs.MovieClip")
 extern class MovieClip extends Container {
@@ -18,7 +18,7 @@ extern class MovieClip extends Container {
 	public var startPosition:Float;
 	public var timeline:Timeline;
 
-	override public function _tick (?data:Dynamic):Void;
+	//override public function _tick (?data:Dynamic):Void;
 	override public function clone (?recursive:Bool):DisplayObject;
 	override public function draw (ctx:CanvasRenderingContext2D, ?ignoreCache:Bool):Void;
 	//public function initialize (mode:Dynamic, startPosition:Dynamic, loop:Dynamic, labels:Dynamic):Void;
