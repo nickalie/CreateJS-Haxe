@@ -12,10 +12,10 @@ extern class AbstractLoader
 	public function getItem():Dynamic;
 	public function load():Void;
 
-	public var onComplete:Dynamic->Void;
-	public var onFileError:Dynamic->Void;
-	public var onFileLoad:Dynamic->Void;
-	public var onFileProgress:Dynamic->Void;
-	public var onLoadStart:Dynamic->Void;
-	public var onProgress:Dynamic->Void;
+	public var onComplete:Void->Void;
+	public var onFileError:Void->Void;
+	public var onFileLoad:Void->Void;
+	public var onFileProgress:Void->Void;
+	public var onLoadStart:Void->Void;
+	public var onProgress:Void->Void;
 }
