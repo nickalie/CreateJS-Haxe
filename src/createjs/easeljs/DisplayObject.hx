@@ -14,6 +14,7 @@ extern class DisplayObject {
 	public var cacheID:Float;
 	public var compositeOperation:String;
 	public var filters:Array<Filter>;
+	public var hitArea:DisplayObject;
 	public var id:Float;
 	public var mouseEnabled:Bool;
 	public var name:String;

@@ -46,6 +46,10 @@ class Main
     {
         //Using tween-engine from CreateJS
         Tween.removeTweens(_shape);
-        Tween.get(_shape).to({x:_stage.mouseX - 20, y:_stage.mouseY - 20}, 2000, Ease.elasticOut);
+        var t = Tween.get(_shape);
+	    t.onChange = function():Void{
+		    trace("onChange");
+	    };
+	    t.to({x:_stage.mouseX - 20, y:_stage.mouseY - 20}, 2000, Ease.elasticOut);
     }
 }
