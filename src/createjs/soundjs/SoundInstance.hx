@@ -25,9 +25,9 @@ extern class SoundInstance
 
 	public function stop():Bool;
 
-	public var onComplete:Void->Void;
-	public var onLoop:Void->Void;
-	public var onPlayFailed:Void->Void;
-	public var onPlayInterrupted:Void->Void;
-	public var onReady:Void->Void;
+	public var onComplete:SoundInstance->Void;
+	public var onLoop:SoundInstance->Void;
+	public var onPlayFailed:SoundInstance->Void;
+	public var onPlayInterrupted:SoundInstance->Void;
+	public var onReady:SoundInstance->Void;
 }
