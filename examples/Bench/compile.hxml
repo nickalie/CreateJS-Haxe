@@ -1,0 +1,5 @@
+-js bin/main.js
+-main Main
+-cp src
+-cp ../../src/
+--dead-code-elimination
