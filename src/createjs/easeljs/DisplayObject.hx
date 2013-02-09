@@ -18,7 +18,7 @@ extern class DisplayObject {
 	public var id:Float;
 	public var mouseEnabled:Bool;
 	public var name:String;
-	public var parent:DisplayObject;
+	public var parent:Container;
 	public var regX:Float;
 	public var regY:Float;
 	public var rotation:Float;
