@@ -1,4 +1,4 @@
-<project name="createjs" url="https://github.com/nickalie/CreateJS-Haxe" license="GPL">
+<project name="createjs" url="https://github.com/nickalie/CreateJS-Haxe" license="MIT">
     <user name="nickalie"/>
     <tag v="js"/>
 	<tag v="html5"/>
