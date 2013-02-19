@@ -1,7 +1,7 @@
 package createjs.easeljs;
 
 @:native("createjs.SpriteSheet")
-extern class SpriteSheet implements EventDispatcher{
+extern class SpriteSheet extends EventDispatcher{
 
 	public function new(data:Dynamic):Void;
 	public function clone():SpriteSheet;

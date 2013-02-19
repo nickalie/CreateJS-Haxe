@@ -1,7 +1,7 @@
 package createjs.easeljs;
 
 @:native("createjs.SpriteSheetBuilder")
-extern class SpriteSheetBuilder implements EventDispatcher{
+extern class SpriteSheetBuilder extends EventDispatcher{
 
 	public function new():Void;
 	public function addAnimation(name:String, frames:Array<Int>, ?next:String, ?frequency:Float):Void;

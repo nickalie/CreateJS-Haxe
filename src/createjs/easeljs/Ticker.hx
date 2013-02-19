@@ -1,7 +1,7 @@
 package createjs.easeljs;
 
 @:native("createjs.Ticker")
-extern class Ticker implements EventDispatcher{
+extern class Ticker extends EventDispatcher{
 
 	public static function addListener(o:Dynamic, ?pauseable:Bool):Void;
 	public static function getFPS():Float;

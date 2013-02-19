@@ -2,7 +2,7 @@ package createjs.easeljs;
 import js.CanvasRenderingContext2D;
 
 @:native("createjs.DisplayObject")
-extern class DisplayObject implements EventDispatcher{
+extern class DisplayObject extends EventDispatcher{
 
 	public function new():Void;
 	public function cache(x:Float, y:Float, width:Float, height:Float, ?scale:Float):Void;
