@@ -1,9 +1,8 @@
 package createjs.easeljs;
-import js.CanvasRenderingContext2D;
 
 @:native("createjs.Shape")
 extern class Shape extends DisplayObject {
 
+    public function new(?graphics:Graphics):Void;
 	public var graphics:Graphics;
-    public function new():Void;
 }

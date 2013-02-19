@@ -3,33 +3,32 @@ package createjs.tweenjs;
 @:native("createjs.Tween")
 extern class Tween
 {
-	public static var IGNORE:Dynamic;
-	public static var LOOP:Float;
-	public static var NONE:Float;
-	public static var REVERSE:Float;
-
-	public static function get(target:Dynamic, ?props:Dynamic):Tween;
-	public static function hasActiveTweens(?target:Dynamic):Void;
-	public static function installPlugin(plugin:Dynamic, properties:Dynamic):Void;
-	public static function removeTweens(target:Dynamic):Void;
-	public static function tick(delta:Int, pause:Bool):Void;
-
-	public var duration:Float;
-	public var ignoreGlobalPause:Bool;
-	public var loop:Bool;
-	public var onChange:Void->Void;
-	public var pluginData:Dynamic;
-	public var position:Dynamic;
-	public var target:Dynamic;
-
 	public function new():Void;
-	public function call(handler:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic):Tween;
-	public function pause(?tween:Tween):Void;
-	public function play(tween:Tween):Void;
-	public function set(props:Dynamic, target:Dynamic):Void;
-	public function setPaused(value:Bool):Void;
-	public function setPosition(value:Int, actionsMode:Dynamic):Void;
-	public function to(props:Dynamic, duration:Float, ?ease:Dynamic):Tween;
+	public function call(_callback:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic):Tween;
+	public static function get(target:Dynamic, ?props:Dynamic, ?pluginData:Dynamic, ?_override:Bool = false):Tween;
+	public static function hasActiveTweens(?target:Dynamic):Bool;
+	public static function installPlugin(plugin:Dynamic, properties:Array<Dynamic>):Void;
+	public function pause(?tween:Tween):Tween;
+	public function play(tween:Tween):Tween;
+	public static function removeTweens(target:Dynamic):Void;
+	public function set(props:Dynamic, target:Dynamic):Tween;
+	public function setPaused(value:Bool):Tween;
+	public function setPosition(value:Int, ?actionsMode:Int):Bool;
+	public static function tick(delta:Int, paused:Bool):Void;
+	//public function tick(delta:Int):Void;
+	public function to(props:Dynamic, ?duration:Int, ?ease:Dynamic):Tween;
 	public function toString():String;
 	public function wait(duration:Int):Tween;
+
+	public var duration:Int;
+	public static var IGNORE:Dynamic;
+	public var ignoreGlobalPause:Bool;
+	public static var LOOP:Int;
+	public var loop:Bool;
+	public static var NONE:Float;
+	public var onChange:Tween->Void;
+	public var pluginData:Dynamic;
+	public var position:Dynamic;
+	public static var REVERSE:Int;
+	public var target:Dynamic;
 }
