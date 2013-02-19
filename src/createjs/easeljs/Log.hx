@@ -1,4 +1,4 @@
-package createjs.soundjs;
+package createjs.easeljs;
 
 @:native("createjs.Log")
 extern class Log {

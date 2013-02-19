@@ -1,16 +1,10 @@
 package createjs.preloadjs;
 
 @:native("createjs.AbstractLoader")
-extern class AbstractLoader
+extern class AbstractLoader extends EventDispatcher
 {
-	public function addEventListener(type:String, listener:Dynamic):Dynamic;
 	public function close():Void;
-	public function dispatchEvent(eventObj:Dynamic, ?target:Dynamic):Bool;
-	public function hasEventListener(type:String):Bool;
 	public function load():Void;
-	public function removeAllEventListeners(?type:String):Void;
-	public function removeEventListener(type:String, listener:Dynamic):Void;
-	public function toString():String;
 
 	public var canceled:Bool;
 	public var loaded:Bool;

@@ -5,14 +5,7 @@ import createjs.easeljs.MouseEvent;
 @:native("createjs.Touch")
 extern class Touch {
 
-	public function _findPrimaryTouch (stage:Stage, touches:Array<Touch>):Void;
-	//public function _handleTouchEnd (stage:Stage, e:TouchEvent):Void;
-	//public function _handleTouchMove (stage:Stage, e:TouchEvent):Void;
-	//public function _handleTouchStart (stage:Stage, e:TouchEvent):Void;
-	public function _handleTouchEnd (stage:Stage, e:MouseEvent):Void;
-	public function _handleTouchMove (stage:Stage, e:MouseEvent):Void;
-	public function _handleTouchStart (stage:Stage, e:MouseEvent):Void;
-	public static function enable (stage:Stage):Void;
-	public static function isSupported ():Bool;
-
+	public static function disable(stage:Stage):Void;
+	public static function enable(stage:Stage, ?sinbleTouch:Bool = false, ?allowDefault:Bool = false):Bool;
+	public static function isSupported():Bool;
 }

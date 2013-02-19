@@ -1,7 +1,7 @@
 package createjs.soundjs;
 
 @:native("createjs.Sound")
-extern class Sound
+extern class Sound implements EventDispatcher
 {
 	public function createInstance(src:String):SoundInstance;
 	public static function getCapabilities():Dynamic;
