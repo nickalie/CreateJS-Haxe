@@ -4,4 +4,5 @@ package createjs.preloadjs;
 extern class XHRLoader extends AbstractLoader
 {
     public function new(file:Dynamic):Void;
+	public function getResult(?rawResult = false):Dynamic;
 }

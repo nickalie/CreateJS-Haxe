@@ -2,13 +2,19 @@ package createjs.soundjs;
 
 @:native("createjs.HTMLAudioPlugin")
 extern class HTMLAudioPlugin {
-	public static var MAX_INSTANCES:Int;
-	public static var capabilities:Dynamic;
 
-	public static function generateCapabiities():Void;
-	public static function isSupported():Bool;
-
-    public function new():Void;
+	public function new():Void;
 	public function create(src:String):SoundInstance;
+	public function isPreloadStarted(src:String):Bool;
+	public static function isSupported():Bool;
+	public function preload(src:String, instance:Dynamic):Void;
 	public function register(src:String, instances:Float):Dynamic;
+
+	public static var AUDIO_ENDED:String;
+	public static var AUDIO_ERROR:String;
+	public static var AUDIO_READY:String;
+	public static var AUDIO_STALLED:String;
+	public static var capabilities:Dynamic;
+	public var defaultNumChannels:Int;
+	public static var MAX_INSTANCES:Int;
 }

@@ -1,14 +1,12 @@
 package createjs.easeljs;
-import createjs.easeljs.Rectangle;
+import js.CanvasRenderingContext2D;
 
 @:native("createjs.Filter")
 extern class Filter {
 
-	public function applyFilter (ctx:Dynamic, x:Dynamic, y:Dynamic, width:Dynamic, height:Dynamic, targetCtx:Dynamic, targetX:Dynamic, targetY:Dynamic):Void;
-	public function clone ():Filter;
-	public function getBounds ():Rectangle;
-	//public function initialize ():Void;
-	public function new ():Void;
+	public function new():Void;
+	public function applyFilter(ctx:CanvasRenderingContext2D, x:Float, y:Float, width:Float, height:Float, ?targetCtx:CanvasRenderingContext2D, ?targetX:Float, ?targetY:Float):Bool;
+	public function clone():Filter;
+	public function getBounds():Rectangle;
 	public function toString ():String;
-
 }
