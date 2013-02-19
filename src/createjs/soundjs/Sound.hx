@@ -15,7 +15,7 @@ extern class Sound extends EventDispatcher
 	public static function registerManifest(manifest:Array<Dynamic>):Dynamic;
 	public static function registerPlugin(plugin:Dynamic):Bool;
 	public static function registerPlugins(plugins:Array<Dynamic>):Bool;
-	public static function registerSound(src:String, ?id:String, ?data:Float, ?preload = true):Dynamic;
+	public static function registerSound(src:String, ?id:String, ?data:Float, ?preload:Bool = true):Dynamic;
 	public static function setMute(value:Bool):Bool;
 	public static function setVolume(value:Float):Void;
 	public static function stop():Void;

@@ -1,5 +1,6 @@
 package createjs.easeljs;
 
+import createjs.tweenjs.Timeline;
 import js.CanvasRenderingContext2D;
 
 @:native("createjs.MovieClip")

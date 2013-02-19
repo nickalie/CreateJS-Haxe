@@ -5,7 +5,7 @@ extern class SpriteSheetBuilder extends EventDispatcher{
 
 	public function new():Void;
 	public function addAnimation(name:String, frames:Array<Int>, ?next:String, ?frequency:Float):Void;
-	public function addFrame(source:DisplayObject, ?sourceRect:Rectangle, ?scale:Float, ?setupFunction:Dynamic, ?setupParams:Array, ?setupScope:Dynamic):Int;
+	public function addFrame(source:DisplayObject, ?sourceRect:Rectangle, ?scale:Float, ?setupFunction:Dynamic, ?setupParams:Array<Dynamic>, ?setupScope:Dynamic):Int;
 	public function addMovieClip(source:DisplayObject, ?sourceRect:Rectangle, ?scale:Float = 1):Void;
 	public function build():SpriteSheet;
 	public function buildAsync(?timeSlice:Float):Void;

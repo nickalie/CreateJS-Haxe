@@ -5,10 +5,10 @@ extern class LoadQueue extends AbstractLoader
 {
 	public function new(?useXHR:Bool = true):Void;
 	public function getItem(value:String):Dynamic;
-	public function getResult(value:String, ?rawResult = false):Dynamic;
+	public function getResult(value:String, ?rawResult:Bool = false):Dynamic;
 	public function installPlugin(plugin:Dynamic):Void;
 	public function loadFile(file:Dynamic, ?loadNow:Bool = true):Void;
-	public function loadManifest(manifest:Array, ?loadNow:Bool = true):Void;
+	public function loadManifest(manifest:Array<Dynamic>, ?loadNow:Bool = true):Void;
 	public function remove(idsOrUrls:Dynamic):Void;
 	public function removeAll():Void;
 	public function reset():Void;

@@ -1,7 +1,7 @@
 package createjs.soundjs;
 
 @:native("createjs.SoundInstance")
-extern class SoundInstance extends EventDispather
+extern class SoundInstance extends EventDispatcher
 {
 	public function new(src:String, owner:Dynamic):Void;
 	public function getDuration():Int;

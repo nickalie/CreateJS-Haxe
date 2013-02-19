@@ -4,10 +4,10 @@ package createjs.tweenjs;
 extern class Tween
 {
 	public function new():Void;
-	public function call(callback:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic):Tween;
+	public function call(_callback:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic):Tween;
 	public static function get(target:Dynamic, ?props:Dynamic, ?pluginData:Dynamic, ?_override:Bool = false):Tween;
 	public static function hasActiveTweens(?target:Dynamic):Bool;
-	public static function installPlugin(plugin:Dynamic, properties:Array):Void;
+	public static function installPlugin(plugin:Dynamic, properties:Array<Dynamic>):Void;
 	public function pause(?tween:Tween):Tween;
 	public function play(tween:Tween):Tween;
 	public static function removeTweens(target:Dynamic):Void;
