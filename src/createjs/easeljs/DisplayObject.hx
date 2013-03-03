@@ -18,7 +18,7 @@ extern class DisplayObject extends EventDispatcher{
 	public function localToGlobal(x:Float, y:Float):Point;
 	public function localToLocal(x:Float, y:Float, target:DisplayObject):Point;
 	public function set(props:Dynamic):DisplayObject;
-	public function setTransform(x:Float, y:Float, scaleX:Float, scaleY:Float, rotation:Float, skewX:Float, skewY:Float, regX:Float, regY:Float):DisplayObject;
+	public function setTransform(?x:Float, ?y:Float, ?scaleX:Float, ?scaleY:Float, ?rotation:Float, ?skewX:Float, ?skewY:Float, ?regX:Float, ?regY:Float):DisplayObject;
 	public function updateContext(ctx:CanvasRenderingContext2D):Void;
 	public function uncache():Void;
 	public function updateCache(?compositeOperation:String):Void;
