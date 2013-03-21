@@ -6,7 +6,11 @@ import js.CanvasRenderingContext2D;
 @:native("createjs.MovieClip")
 extern class MovieClip extends Container {
 
-	public function new(mode:String, startPosition:Float, loop:Bool, labels:Dynamic):Void;
+	public static inline var INDEPENDENT = "independent";
+	public static inline var SINGLE_FRAME = "single";
+	public static inline var SYNCHED = "synched";
+
+	public function new(?mode:String = INDEPENDENT, ?startPosition:Float = 0, ?loop:Bool = true, ?labels:Dynamic = null):Void;
 	public function gotoAndPlay(positionOrLabel:Dynamic):Void;
 	public function gotoAndStop(positionOrLabel:Dynamic):Void;
 	public function play():Void;
@@ -16,13 +20,10 @@ extern class MovieClip extends Container {
 	public var autoReset:Bool;
 	public static var buildDate:String;
 	public var currentFrame:Int;
-	public static var INDEPENDENT:String;
 	public var loop:Bool;
 	public var mode:String;
 	public var paused:Bool;
-	public static var SINGLE_FRAME:String;
 	public var startPosition:Float;
-	public static var SYNCHED:String;
 	public var timeline:Timeline;
 	public static var version:String;
 }
