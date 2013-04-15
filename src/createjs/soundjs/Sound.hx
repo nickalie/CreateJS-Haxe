@@ -25,10 +25,10 @@ extern class Sound extends EventDispatcher
 	public static var defaultInterruptBehavior:String;
 	public static var DELIMITER:String;
 	public static var EXTENSION_MAP:Dynamic;
-	public static var INTERRUPT_ANY:String;
-	public static var INTERRUPT_EARLY:String;
-	public static var INTERRUPT_LATE:String;
-	public static var INTERRUPT_NONE:String;
+	public static inline var INTERRUPT_ANY:String = "any";
+	public static inline var INTERRUPT_EARLY:String = "early";
+	public static inline var INTERRUPT_LATE:String = "late";
+	public static inline var INTERRUPT_NONE:String = "none";
 	public var onLoadComplete:Dynamic->Void;
 	public static var PLAY_FAILED:String;
 	public static var PLAY_FINISHED:String;
