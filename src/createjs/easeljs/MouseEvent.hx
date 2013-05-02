@@ -6,7 +6,7 @@ extern class MouseEvent extends EventDispatcher
 	public function new(type:String, stageX:Float, stageY:Float, target:DisplayObject, nativeEvent:MouseEvent, pointerID:Int, primary:Bool, rawX:Float, rawY:Float):Void;
 	public function clone():MouseEvent;
 
-	public var nativeEvent:MouseEvent;
+	public var nativeEvent:Dynamic;
 	public var onMouseMove:Dynamic;
 	public var onMouseUp:Dynamic;
 	public var pointerID:Int;
