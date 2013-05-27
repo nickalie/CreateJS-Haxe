@@ -5,7 +5,7 @@ package js;
  * @author 
  */
 
- @:native ("CanvasRenderingContext2D")
+ @:native("CanvasRenderingContext2D")
 extern class CanvasRenderingContext2D 
 {
 	public function new():Void;
