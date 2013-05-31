@@ -1,6 +1,6 @@
 package js;
 
-@:native ("HTMLCanvasElement")
+@:native("HTMLCanvasElement")
 extern class HTMLCanvasElement
 {
     public function new():Void;
