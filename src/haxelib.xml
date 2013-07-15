@@ -7,5 +7,5 @@
 	<tag v="tween"/>
 	<tag v="tween"/>
     <description>The project includes externs for CreateJS libraries: EaselJS, TweenJS, SoundJS, PreloadJS</description>
-    <version name="1.1.2">License was changed to MIT</version>
+    <version name="1.3.1">API was updated because of new version CreateJS toolkit: EaselJS 0.6.0, TweenJS 0.4.0, SoundJS 0.4.0, PreloadJS 0.3.0; plus minor fix</version>
 </project>
