@@ -26,7 +26,6 @@ extern class Matrix2D {
 
 	public var a:Float;
 	public var alpha:Float;
-	public var atx:Float;
 	public var b:Float;
 	public var c:Float;
 	public var compositeOperation:String;
@@ -34,6 +33,7 @@ extern class Matrix2D {
 	public static var DEG_TO_RAD:Float;
 	//public static var identity:Matrix2D;
 	public var shadow:Shadow;
+	public var tx:Float;
 	public var ty:Float;
 
 }
