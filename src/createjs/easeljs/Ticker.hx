@@ -3,7 +3,7 @@ package createjs.easeljs;
 @:native("createjs.Ticker")
 extern class Ticker{
 
-	public static function addListener(o:Dynamic, ?pauseable:Bool):Void;
+	public static function addEventListener(type:String, listener:Dynamic, ?useCapture:Bool):Dynamic;
 	public static function dispatchEvent(eventObj:Dynamic, ?target:Dynamic):Bool;
 	public static function getEventTime(runTime:Bool):Float;
 
