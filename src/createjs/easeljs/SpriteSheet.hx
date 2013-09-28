@@ -12,5 +12,5 @@ extern class SpriteSheet extends EventDispatcher{
 	public function getNumFrames(?animation:String):Int;
 
 	public var complete:Bool;
-	public var onComplete:Dynamic;
+	public var framerate:Float;
 }

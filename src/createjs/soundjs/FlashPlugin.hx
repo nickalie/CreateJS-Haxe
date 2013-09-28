@@ -16,6 +16,8 @@ extern class FlashPlugin {
 	public function register(src:String, instances:Float):Dynamic;
 	public function registerPreloadInstance(flashId:String, instance:Dynamic):Void;
 	public function registerSoundInstance(flashId:String, instance:Dynamic):Void;
+	public function removeAllSounds():Void;
+	public function removeSound(src:String):Void;
 	public function setMute(value:Bool):Bool;
 	public function setVolume(value:Float):Bool;
 	public function unregisterPreloadInstance(flashId:String):Void;

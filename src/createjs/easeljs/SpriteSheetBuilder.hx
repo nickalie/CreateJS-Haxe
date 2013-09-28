@@ -11,11 +11,12 @@ extern class SpriteSheetBuilder extends EventDispatcher{
 	public function buildAsync(?timeSlice:Float):Void;
 	public function stopAsync():Void;
 
-	public var defaultScale:Float;
+	//public var defaultScale:Float;
 	public var maxHeight:Float;
 	public var maxWidth:Float;
 	public var padding:Float;
 	public var progress:Float;
+	public var scale:Float;
 	public var spriteSheet:Float;
 	public var timeSlice:Float;
 

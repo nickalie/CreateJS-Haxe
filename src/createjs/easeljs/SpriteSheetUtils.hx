@@ -21,9 +21,9 @@ extern class SpriteSheetUtils {
 	* "walk_left" consisting of the frames from the original "walk_right" sequence flipped
 	* horizontally: &#123;walk_left: ["walk_right", true, false]&#125;
 	**/
-	public static function addFlippedFrames(spriteSheet:SpriteSheet, horizontal:Bool, vertical:Bool, both:Bool):Void;
+	//public static function addFlippedFrames(spriteSheet:SpriteSheet, horizontal:Bool, vertical:Bool, both:Bool):Void;
 	
-	public static function extractFrame(spriteSheet:SpriteSheet, frame:Dynamic):Image;
-	public static function mergeAlpha(rbgImage:Image, alphaImage:Image, ?canvas:Dynamic):Dynamic;
+	public static function extractFrame(spriteSheet:SpriteSheet, frameOrAnimation:Dynamic):Image;
+	//public static function mergeAlpha(rbgImage:Image, alphaImage:Image, ?canvas:Dynamic):Dynamic;
 
 }
