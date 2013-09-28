@@ -8,20 +8,23 @@ extern class DisplayObject extends EventDispatcher{
 	public function cache(x:Float, y:Float, width:Float, height:Float, ?scale:Float):Void;
 	public function clone():DisplayObject;
 	public function draw(ctx:CanvasRenderingContext2D, ?ignoreCache:Bool):Void;
+	public function getBounds():Rectangle;
 	public function getCacheDataURL():String;
 	public function getConcatenatedMatrix(?mtx:Matrix2D):Matrix2D;
 	public function getMatrix(?mtx:Matrix2D):Matrix2D;
 	public function getStage():Stage;
+	public function getTransformedBounds():Rectangle;
 	public function globalToLocal(x:Float, y:Float):Point;
 	public function hitTest(x:Float, y:Float):Bool;
 	public function isVisible():Bool;
 	public function localToGlobal(x:Float, y:Float):Point;
 	public function localToLocal(x:Float, y:Float, target:DisplayObject):Point;
 	public function set(props:Dynamic):DisplayObject;
-	public function setTransform(?x:Float, ?y:Float, ?scaleX:Float, ?scaleY:Float, ?rotation:Float, ?skewX:Float, ?skewY:Float, ?regX:Float, ?regY:Float):DisplayObject;
-	public function updateContext(ctx:CanvasRenderingContext2D):Void;
+	public function setBounds(x:Float, y:Float, width:Float, height:Float):Void;
+	public function setTransform(?x:Float=0, ?y:Float=0, ?scaleX:Float=1, ?scaleY:Float=1, ?rotation:Float=0, ?skewX:Float=0, ?skewY:Float=0, ?regX:Float=0, ?regY:Float=0):DisplayObject;
 	public function uncache():Void;
 	public function updateCache(?compositeOperation:String):Void;
+	public function updateContext(ctx:CanvasRenderingContext2D):Void;
 
 	public var alpha:Float;
 	public var cacheCanvas:Dynamic;

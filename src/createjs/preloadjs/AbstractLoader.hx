@@ -3,6 +3,7 @@ package createjs.preloadjs;
 @:native("createjs.AbstractLoader")
 extern class AbstractLoader extends EventDispatcher
 {
+	public function buildPath(src:String, ?basePath:String, ?data:Dynamic):String;
 	public function close():Void;
 	public function load():Void;
 

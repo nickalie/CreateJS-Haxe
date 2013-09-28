@@ -35,6 +35,7 @@ extern class Graphics {
 	public function endStroke():Graphics;
 	public static function getHSL(hue:Float, saturation:Float, lightness:Float, ?alpha:Float):String;
 	public static function getRGB(r:Int, g:Int, b:Int, ?alpha:Float):String;
+	public function inject(callback:Dynamic, data:Dynamic):Graphics;
 	public function isEmpty():Bool;
 	public function lineTo(x:Float, y:Float):Graphics;
 	public function moveTo(x:Float, y:Float):Graphics;
@@ -44,6 +45,7 @@ extern class Graphics {
 	public function toString():String;
 
 	public static var BASE_64:Dynamic;
+	public static var Command:Dynamic;
 	public static var STROKE_CAPS_MAP:Array<String>;
 	public static var STROKE_JOINTS_MAP :Array<String>;
 

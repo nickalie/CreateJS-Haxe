@@ -11,6 +11,9 @@ extern class MovieClip extends Container {
 	public static inline var SYNCHED = "synched";
 
 	public function new(?mode:String = INDEPENDENT, ?startPosition:Float = 0, ?loop:Bool = true, ?labels:Dynamic = null):Void;
+
+	public function getCurrentLabel():String;
+	public function getLabels():Array<Dynamic>;
 	public function gotoAndPlay(positionOrLabel:Dynamic):Void;
 	public function gotoAndStop(positionOrLabel:Dynamic):Void;
 	public function play():Void;
@@ -20,6 +23,7 @@ extern class MovieClip extends Container {
 	public var autoReset:Bool;
 	public static var buildDate:String;
 	public var currentFrame:Int;
+	public var frameBounds:Array<Rectangle>;
 	public var loop:Bool;
 	public var mode:String;
 	public var paused:Bool;
