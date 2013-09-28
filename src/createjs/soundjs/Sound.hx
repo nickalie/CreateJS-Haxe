@@ -19,7 +19,7 @@ extern class Sound extends EventDispatcher
 	public static function registerSound(src:String, ?id:String, ?data:Float, ?preload:Bool = true):Dynamic;
 
 	public static function removeAllSounds():Void;
-	public static function removeManifest(manifest:Array<Object>):Dynamic;
+	public static function removeManifest(manifest:Array<Dynamic>):Dynamic;
 	public static function removeSound(src:String):Void;
 
 	public static function setMute(value:Bool):Bool;

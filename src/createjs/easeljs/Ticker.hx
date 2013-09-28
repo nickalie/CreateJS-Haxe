@@ -19,7 +19,7 @@ extern class Ticker{
 	public static function init():Void;
 
 	public static function off(type:String, listener:Dynamic, ?useCapture:Bool):Bool;
-	public static function on(type:String, listener:Dynamic, ?scope:Dynamic, ?once:Bool=false, ?data = null, ?useCapture:Bool=false):Dynamic;
+	public static function on(type:String, listener:Dynamic, ?scope:Dynamic, ?once:Bool=false, ?data:Dynamic = null, ?useCapture:Bool=false):Dynamic;
 	public static function removeAllEventListeners(?type:String):Void;
 	public static function removeEventListener(type:String, listener:Dynamic, ?useCapture:Bool):Void;
 	public static function reset():Void;

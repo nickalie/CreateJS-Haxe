@@ -1,7 +1,7 @@
 package createjs.tweenjs;
 
 @:native("createjs.Tween")
-extern class Tween extends EventDipatcher{
+extern class Tween extends EventDispatcher{
 
 	public function new(target:Dynamic, ?props:Dynamic, ?pluginData:Dynamic):Void;
 	public function call(_callback:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic):Tween;
@@ -17,7 +17,6 @@ extern class Tween extends EventDipatcher{
 	public static function tick(delta:Int, paused:Bool):Void;
 	//public function tick(delta:Int):Void;
 	public function to(props:Dynamic, ?duration:Int, ?ease:Dynamic):Tween;
-	public function toString():String;
 	public function wait(duration:Int):Tween;
 
 	public var duration:Int;
