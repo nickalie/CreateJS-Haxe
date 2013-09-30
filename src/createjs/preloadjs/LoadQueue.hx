@@ -3,7 +3,7 @@ package createjs.preloadjs;
 @:native("createjs.LoadQueue")
 extern class LoadQueue extends AbstractLoader
 {
-	public function new(?useXHR:Bool = true):Void;
+	public function new(?useXHR:Bool = true, ?basePath:String = null):Void;
 	public function getItem(value:String):Dynamic;
 	public function getResult(value:String, ?rawResult:Bool = false):Dynamic;
 	public function installPlugin(plugin:Dynamic):Void;
@@ -21,6 +21,7 @@ extern class LoadQueue extends AbstractLoader
 	public static var IMAGE:String;
 	public static var JAVASCRIPT:String;
 	public static var JSON:String;
+	public static var JSONP:String;
 	public static var LOAD_TIMEOUT:Float;
 	public static var SOUND:String;
 	public static var SVG:String;

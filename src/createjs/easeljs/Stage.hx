@@ -18,8 +18,9 @@ extern class Stage extends Container {
 	public var mouseMoveOutside:Bool;
 	public var mouseX:Float;
 	public var mouseY:Float;
-	public var snapToPixelEnabled:Bool;
-	public var tick:Dynamic;
+	public var nextStage:Stage;
+	//public var snapToPixelEnabled:Bool;
+	//public var tick:Dynamic;
 	public var tickOnUpdate:Bool;
 
 	public var onMouseDown:Dynamic;
