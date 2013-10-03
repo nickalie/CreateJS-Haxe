@@ -1,0 +1,10 @@
+{
+  "name": "createjs",
+  "url" : "https://github.com/nickalie/CreateJS-Haxe/",
+  "license": "MIT",
+  "tags": ["js", "html5", "canvas", "sound", "tween"],
+  "description": "The project includes externs for CreateJS libraries: EaselJS, TweenJS, SoundJS, PreloadJS",
+  "version": "1.5.0",
+  "releasenote": "Externs were updated due to new version of CreateJS. EaselJS 0.6.0 -> 0.7.0, TweenJS 0.4.0 -> 0.5.0, SoundJS 0.4.0 -> 0.5.0, PreloadJS 0.3.0 -> 0.4.0",
+  "contributors": ["nicklaie", "nickalie", "Meychi"]
+}
