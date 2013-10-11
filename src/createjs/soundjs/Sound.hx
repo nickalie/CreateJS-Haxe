@@ -1,16 +1,22 @@
 package createjs.soundjs;
 
 @:native("createjs.Sound")
-extern class Sound extends EventDispatcher
+extern class Sound
 {
-	public function createInstance(src:String):SoundInstance;
+	public static function addEventListener(type:String, listener:Dynamic, ?useCapture:Bool):Dynamic;
+	public static function dispatchEvent(eventObj:Dynamic, ?target:Dynamic):Bool;
+	public static function hasEventListener(type:String):Bool;
+	public static function removeAllEventListeners(?type:String):Void;
+	public static function removeEventListener(type:String, listener:Dynamic, ?useCapture:Bool):Void;
+	
+	public static function createInstance(src:String):SoundInstance;
 	public static function getCapabilities():Dynamic;
 	public static function getCapability(key:String):Dynamic;
 	public static function getMute():Bool;
 	public static function getVolume():Float;
-	public function initializeDefaultPlugins():Bool;
+	public static function initializeDefaultPlugins():Bool;
 	public static function isReady():Bool;
-	public function loadComplete(src:String):Bool;
+	public static function loadComplete(src:String):Bool;
 	//public static function mute(value:Bool):Void;
 	public static function play(src:String, ?interrupt:String = INTERRUPT_NONE, ?delay:Int = 0, ?offset:Int = 0, ?loop:Int = 0, ?volume:Float = 1, ?pan:Float = 0):SoundInstance;
 	public static function registerManifest(manifest:Array<Dynamic>):Dynamic;
