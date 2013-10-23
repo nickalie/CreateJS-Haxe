@@ -1,8 +1,10 @@
 package createjs.easeljs;
 
-@:native("createjs.DOMElement")
-extern class DOMElement extends DisplayObject {
+import js.html.HtmlElement;
 
-	public function new(htmlElement:Dynamic):Void;
-	public var htmlElement:Dynamic;
+@:native("createjs.DOMElement")
+extern class DOMElement<T:HtmlElement> extends DisplayObject {
+
+	public function new(htmlElement:T):Void;
+	public var htmlElement:T;
 }
