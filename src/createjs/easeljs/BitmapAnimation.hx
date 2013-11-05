@@ -5,7 +5,7 @@ extern class BitmapAnimation extends DisplayObject {
 
 	public function new(spriteSheet:SpriteSheet):Void;
 	public function advance():Void;
-	public function getBounds():Rectangle;
+	public override function getBounds():Rectangle;
 	public function gotoAndPlay(frameOrAnimation:Dynamic):Void;
 	public function gotoAndStop(frameOrAnimation:Dynamic):Void;
 	public function play():Void;
