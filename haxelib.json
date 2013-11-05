@@ -1,6 +1,5 @@
 {
   "name": "createjs",
-  "classpath": "src/",
   "url" : "https://github.com/nickalie/CreateJS-Haxe/",
   "license": "MIT",
   "tags": ["js", "html5", "canvas", "sound", "tween"],
