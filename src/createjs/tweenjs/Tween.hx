@@ -10,7 +10,7 @@ extern class Tween extends EventDispatcher{
 	public static function installPlugin(plugin:Dynamic, properties:Array<Dynamic>):Void;
 	public function pause(?tween:Tween):Tween;
 	public function play(tween:Tween):Tween;
-	public static function removeTweens():Void;
+	public static function removeTweens(target:Dynamic):Void;
 	public function set(props:Dynamic, target:Dynamic):Tween;
 	public function setPaused(value:Bool):Tween;
 	public function setPosition(value:Int, ?actionsMode:Int):Bool;
