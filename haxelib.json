@@ -4,7 +4,7 @@
   "license": "MIT",
   "tags": ["js", "html5", "canvas", "sound", "tween"],
   "description": "The project includes externs for CreateJS libraries: EaselJS, TweenJS, SoundJS, PreloadJS",
-  "version": "1.5.1",
-  "releasenote": "SoundJS was fixed. Now it contains only static methods.",
-  "contributors": ["nicklaie", "nickalie", "Meychi"]
+  "version": "1.5.3",
+  "releasenote": "Missed constructor was added to DOMElement. https://github.com/nickalie/CreateJS-Haxe/pull/17",
+  "contributors": ["nicklaie", "nickalie"]
 }
