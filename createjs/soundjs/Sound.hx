@@ -33,6 +33,7 @@ extern class Sound
 	public static function stop():Void;
 
 	public static var activePlugin:Dynamic;
+	public static var alternateExtensions:Array<String>;
 	//public static var AUDIO_TIMEOUT:Float;
 	public static var defaultInterruptBehavior:String;
 	public static var DELIMITER:String;
