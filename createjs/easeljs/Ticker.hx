@@ -11,6 +11,7 @@ extern class Ticker{
 	public static function getInterval():Float;
 	public static function getMeasuredFPS(?ticks:Float):Float;
 	public static function getMeasuredTickTime(?ticks:Float):Float;
+	public static function getPaused():Bool;
 	public static function getTicks(pauseable:Bool):Float;
 	public static function getTime(runTime:Bool):Float;
 

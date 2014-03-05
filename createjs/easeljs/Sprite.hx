@@ -3,7 +3,7 @@ package createjs.easeljs;
 @:native("createjs.Sprite")
 extern class Sprite extends DisplayObject {
 
-	public function new(spriteSheet:SpriteSheet, frameOrAnimation:Dynamic):Void;
+	public function new(spriteSheet:SpriteSheet, ?frameOrAnimation:Dynamic):Void;
 
 	public function advance(?time:Float):String;
 
@@ -11,6 +11,7 @@ extern class Sprite extends DisplayObject {
 	public function gotoAndStop(frameOrAnimation:Dynamic):Void;
 	public function play():Void;
 	public function stop():Void;
+	override public function clone():Sprite;
 
 	public var currentAnimation:String;
 	public var currentAnimationFrame:Int;
