@@ -11,9 +11,10 @@ extern class Bitmap extends DisplayObject
 	@:overload(function(canvas:CanvasElement):Void { } )
 	@:overload(function(video:VideoElement):Void { } )
 	public function new(image:ImageElement):Void;
+	override public function clone():Bitmap;
 	
 	public var image:ImageElement;
 	public var sourceRect:Rectangle;
 
-	override public function clone():Bitmap;
+	
 }
