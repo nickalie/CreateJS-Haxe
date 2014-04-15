@@ -13,6 +13,9 @@ extern class MouseEvent extends EventDispatcher
 	public var eventPhase:Int;
 	public var immediatePropagationStopped:Bool;
 
+	public var localX:Float;
+	public var localY:Float;
+
 	public var nativeEvent:Dynamic;
 	public var pointerID:Int;
 	public var primary:Bool;
