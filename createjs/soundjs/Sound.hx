@@ -19,7 +19,7 @@ extern class Sound
 	public static function loadComplete(src:String):Bool;
 	//public static function mute(value:Bool):Void;
 	public static function play(src:String, ?interrupt:String = INTERRUPT_NONE, ?delay:Int = 0, ?offset:Int = 0, ?loop:Int = 0, ?volume:Float = 1, ?pan:Float = 0):SoundInstance;
-	public static function registerManifest(manifest:Array<Dynamic>):Dynamic;
+	public static function registerManifest(manifest:Array<Dynamic>, basepath:String):Dynamic;
 	public static function registerPlugin(plugin:Dynamic):Bool;
 	public static function registerPlugins(plugins:Array<Dynamic>):Bool;
 	public static function registerSound(src:String, ?id:String, ?data:Float, ?preload:Bool = true):Dynamic;
