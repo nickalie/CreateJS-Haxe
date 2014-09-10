@@ -1,7 +1,7 @@
 package createjs.easeljs;
 
 import createjs.tweenjs.Timeline;
-import js.CanvasRenderingContext2D;
+import js.html.CanvasRenderingContext2D;
 
 @:native("createjs.MovieClip")
 extern class MovieClip extends Container {
