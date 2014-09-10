@@ -24,7 +24,7 @@ extern class Matrix2D {
 	public function scale(x:Float, y:Float):Matrix2D;
 	public function skew(skewX:Float, skewY:Float):Matrix2D;
 	public function toString():String;
-	public function transformPoint(x:Float, y:Float, ?pt:Dynamic = null):Matrix2D;
+	public function transformPoint(x:Float, y:Float, ?pt:Dynamic = null):createjs.easeljs.Point;
 	public function translate(x:Float, y:Float):Matrix2D;
 
 	public var a:Float;
