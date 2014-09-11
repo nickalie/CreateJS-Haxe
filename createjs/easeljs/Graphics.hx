@@ -1,5 +1,5 @@
 package createjs.easeljs;
-import js.CanvasRenderingContext2D;
+import js.html.CanvasRenderingContext2D;
 
 @:native("createjs.Graphics")
 extern class Graphics {

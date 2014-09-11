@@ -1,5 +1,5 @@
 package createjs.easeljs;
-import js.HTMLCanvasElement;
+import js.html.CanvasElement;
 
 @:native("createjs.Stage")
 extern class Stage extends Container {
