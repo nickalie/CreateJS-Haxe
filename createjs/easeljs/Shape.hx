@@ -4,8 +4,8 @@ package createjs.easeljs;
 extern class Shape extends DisplayObject {
 
     public function new(?graphics:Graphics):Void;
-	@:overload(function(recursive:Bool):Shape{})
-	override public function clone():Shape;
-	
+	@:overload(function():Shape{})
+	override public function clone(?recursive:Bool):Shape;
+
 	public var graphics:Graphics;
 }

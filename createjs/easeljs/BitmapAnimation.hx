@@ -11,7 +11,8 @@ extern class BitmapAnimation extends DisplayObject {
 	public function play():Void;
 	public function stop():Void;
 
-	override public function clone():BitmapAnimation;
+	@:overload(function():BitmapAnimation{})
+	override public function clone(?recursive:Bool):BitmapAnimation;
 
 	public var currentAnimation:String;
 	public var currentAnimationFrame:Int;

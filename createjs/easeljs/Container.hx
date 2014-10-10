@@ -7,8 +7,7 @@ extern class Container extends DisplayObject {
 	public function new():Void;
 	public function addChild(child:DisplayObject):DisplayObject;
 	public function addChildAt(child:DisplayObject, index:Float):DisplayObject;
-	@:overload(function(recursive:Bool):Container{})
-	override public function clone():Container;
+	override public function clone(?recursive:Bool):Container;
 	public function contains(child:DisplayObject):Bool;
 	public function getChildAt(index:Int):DisplayObject;
 	public function getChildByName(name:String):DisplayObject;

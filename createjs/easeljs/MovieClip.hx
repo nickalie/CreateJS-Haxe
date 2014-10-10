@@ -11,12 +11,13 @@ extern class MovieClip extends Container {
 	public static inline var SYNCHED = "synched";
 
 	public function new(?mode:String = INDEPENDENT, ?startPosition:Float = 0, ?loop:Bool = true, ?labels:Dynamic = null):Void;
-	
+
 	/**
 	* MovieClip instances cannot be cloned.
 	*/
-	override public function clone():Dynamic;
-	
+	@:overload(function():Dynamic{})
+	override public function clone(?recursive:Bool):Dynamic;
+
 	public function getCurrentLabel():String;
 	public function getLabels():Array<Dynamic>;
 	public function gotoAndPlay(positionOrLabel:Dynamic):Void;
