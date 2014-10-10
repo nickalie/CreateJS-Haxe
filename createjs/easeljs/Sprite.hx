@@ -5,7 +5,8 @@ extern class Sprite extends DisplayObject {
 
 	public function new(spriteSheet:SpriteSheet, ?frameOrAnimation:Dynamic):Void;
 	public function advance(?time:Float):String;
-	override public function clone():Sprite;
+	@:overload(function():Sprite{})
+	override public function clone(?recursive:Bool):Sprite;
 	public function gotoAndPlay(frameOrAnimation:Dynamic):Void;
 	public function gotoAndStop(frameOrAnimation:Dynamic):Void;
 	public function play():Void;

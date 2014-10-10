@@ -4,7 +4,8 @@ package createjs.easeljs;
 extern class Text extends DisplayObject{
 
 	public function new(?text:String, ?font:String, ?color:String):Void;
-	override public function clone():Text;
+	@:overload(function():Text{})
+	override public function clone(?recursive:Bool):Text;
 	public function getMeasuredHeight():Float;
 	public function getMeasuredLineHeight():Float;
 	public function getMeasuredWidth():Float;

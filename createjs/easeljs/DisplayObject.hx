@@ -6,7 +6,7 @@ extern class DisplayObject extends EventDispatcher{
 
 	public function new():Void;
 	public function cache(x:Float, y:Float, width:Float, height:Float, ?scale:Float):Void;
-	public function clone():DisplayObject;
+	public function clone(?recursive:Bool):DisplayObject;
 	public function draw(ctx:CanvasRenderingContext2D, ?ignoreCache:Bool):Bool;
 	public function getBounds():Rectangle;
 	public function getCacheDataURL():String;
