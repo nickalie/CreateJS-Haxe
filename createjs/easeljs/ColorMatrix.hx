@@ -1,7 +1,7 @@
 package createjs.easeljs;
 
 @:native("createjs.ColorMatrix")
-extern class ColorMatrix extends Array{
+extern class ColorMatrix {
 
 	public function new(brightness:Float, contrast:Float, saturation:Float, hue:Float):Void;
 	public function adjustBrightness(value:Float):ColorMatrix;
@@ -13,7 +13,7 @@ extern class ColorMatrix extends Array{
 	public function concat(matrix:Array):ColorMatrix;
 	public function copyMatrix(matrix:Array):ColorMatrix;
 	public function reset():ColorMatrix;
-	public function toArray():Array;
+	public function toArray():Array<Dynamic>;
 
 	public static var DELTA_INDEX:Array<Float>;
 	public static var IDENTITY_MATRIX:Array<Int>;
