@@ -14,11 +14,11 @@ extern class DisplayObject extends EventDispatcher{
 	public function getMatrix(?mtx:Matrix2D):Matrix2D;
 	public function getStage():Stage;
 	public function getTransformedBounds():Rectangle;
-	public function globalToLocal(x:Float, y:Float):Point;
+	public function globalToLocal(x:Float, y:Float, ?pt: Point):Point;
 	public function hitTest(x:Float, y:Float):Bool;
 	public function isVisible():Bool;
-	public function localToGlobal(x:Float, y:Float):Point;
-	public function localToLocal(x:Float, y:Float, target:DisplayObject):Point;
+	public function localToGlobal(x:Float, y:Float, ?pt: Point):Point;
+	public function localToLocal(x:Float, y:Float, target:DisplayObject, ?pt: Point):Point;
 	public function set(props:Dynamic):DisplayObject;
 	public function setBounds(x:Float, y:Float, width:Float, height:Float):Void;
 	public function setTransform(?x:Float=0, ?y:Float=0, ?scaleX:Float=1, ?scaleY:Float=1, ?rotation:Float=0, ?skewX:Float=0, ?skewY:Float=0, ?regX:Float=0, ?regY:Float=0):DisplayObject;
