@@ -14,7 +14,7 @@ extern class Text extends DisplayObject{
 	public var lineHeight:Float;
 	public var lineWidth:Float;
 	public var maxWidth:Float;
-	public var outline:Bool;
+	public var outline:Float;
 	public var text:String;
 	public var textAlign:String;
 	public var textBaseline:String;
