@@ -43,6 +43,7 @@ extern class Graphics {
 	public function rect(x:Float, y:Float, w:Float, h:Float):Graphics;
 	public function setStrokeStyle(thickness:Float, ?caps:Dynamic = 0, ?joints:Dynamic = 0, ?miterLimit:Float = 10, ?ignoreScale:Bool = false):Graphics;
 	public function toString():String;
+	public function setStrokeDash(?elements:Array<Int>,?offset:Int=0):Graphics;
 
 	public static var BASE_64:Dynamic;
 	public static var Command:Dynamic;
