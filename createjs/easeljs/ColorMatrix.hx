@@ -10,8 +10,8 @@ extern class ColorMatrix {
 	public function adjustHue(value:Float):ColorMatrix;
 	public function adjustSaturation(value:Float):ColorMatrix;
 	public function clone():ColorMatrix;
-	public function concat(matrix:Array):ColorMatrix;
-	public function copyMatrix(matrix:Array):ColorMatrix;
+	public function concat(matrix:ColorMatrix):ColorMatrix;
+	public function copyMatrix(matrix:ColorMatrix):ColorMatrix;
 	public function reset():ColorMatrix;
 	public function toArray():Array<Dynamic>;
 

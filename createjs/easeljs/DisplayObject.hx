@@ -51,6 +51,7 @@ extern class DisplayObject extends EventDispatcher{
 	public var visible:Bool;
 	public var x:Float;
 	public var y:Float;
+	public var transformMatrix:Matrix2D;
 
 	public var onClick:Dynamic;
 	public var onDoubleClick:Dynamic;
