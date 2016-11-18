@@ -1,0 +1,59 @@
+{
+  "name": "createjs-haxe",
+  "description": "The project includes Haxe externs for CreateJS libraries: EaselJS, TweenJS, SoundJS, PreloadJS",
+  "keywords": [
+    "haxe",
+    "createjs",
+    "easeljs",
+    "tweenjs",
+    "preloadjs",
+    "canvas"
+  ],
+  "author": {
+    "name": "Nikolay Glushchenko"
+  },
+  "version": "1.7.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "main": "",
+  "preferGlobal": false,
+  "homepage": "https://github.com/nickalie/CreateJS-Haxe/",
+  "bugs": {
+    "url": "https://github.com/nickalie/CreateJS-Haxe/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nickalie/CreateJS-Haxe.git"
+  },
+  "dependencies": {},
+  "_id": "createjs-haxe@1.6.5",
+  "_shasum": "762a6bb1764482c1d001d2d354c23fdd1069f004",
+  "_from": "createjs-haxe@>=1.5.6",
+  "_npmVersion": "1.4.9",
+  "_npmUser": {
+    "name": "haxelib.js",
+    "email": "haxelibjs@tamina-online.com"
+  },
+  "maintainers": [
+    {
+      "name": "damoebius",
+      "email": "damo@tamina-online.com"
+    },
+    {
+      "name": "haxelib.js",
+      "email": "haxelibjs@tamina-online.com"
+    }
+  ],
+  "dist": {
+    "shasum": "304c5e6a81681beb7cd01f3d761e14050e49dc9a",
+    "tarball": "http://registry.npmjs.org/createjs-haxe/-/createjs-haxe-1.6.5.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-5-east.internal.npmjs.com",
+    "tmp": "tmp/createjs-haxe-1.6.5.tgz_1455115044626_0.04731920990161598"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/createjs-haxe/-/createjs-haxe-1.6.5.tgz"
+}
