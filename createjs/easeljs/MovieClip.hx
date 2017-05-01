@@ -10,12 +10,12 @@ extern class MovieClip extends Container {
 	public static inline var SINGLE_FRAME = "single";
 	public static inline var SYNCHED = "synched";
 
-	public function new(?mode:String = INDEPENDENT, ?startPosition:Float = 0, ?loop:Bool = true, ?labels:Dynamic = null):Void;
+	public function new(?mode:String = "independent", ?startPosition:Float = 0, ?loop:Bool = true, ?labels:Dynamic = null):Void;
 	
 	/**
 	* MovieClip instances cannot be cloned.
 	*/
-	override public function clone():Dynamic;
+	override public function clone():Container;
 	
 	public function getCurrentLabel():String;
 	public function getLabels():Array<Dynamic>;
@@ -35,4 +35,8 @@ extern class MovieClip extends Container {
 	public var startPosition:Float;
 	public var timeline:Timeline;
 	public static var version:String;
+	public var numChildren:Int;
+	public var currentLabel:String;
+	public var totalFrames:Int;
+	public var labels:Array<Dynamic>;
 }
